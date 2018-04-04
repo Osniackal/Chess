@@ -3,7 +3,7 @@ package sample.views;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import sample.util.Settings;
-import sample.views.nodes.ChessField;
+import sample.views.nodes.ChessboardNode;
 
 public class GameView extends BaseView<StackPane> {
 
@@ -14,7 +14,7 @@ public class GameView extends BaseView<StackPane> {
     @Override
     protected boolean build(StackPane root) {
         root.getChildren().addAll(
-               new ChessField(true, x, y)
+               new ChessboardNode()
         );
 
         parentStage.setTitle("Chess");

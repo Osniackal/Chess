@@ -4,12 +4,12 @@ import javafx.scene.Group;
 import javafx.scene.shape.Rectangle;
 import sample.util.Settings;
 
-public class ChessField extends BaseNode<Group> {
+public class ChessFieldNode extends BaseNode<Group> {
 
     private final boolean white;
     private final double x, y;
 
-    public ChessField(boolean white, double x, double y) {
+    public ChessFieldNode(boolean white, double x, double y) {
         super(new Group());
         this.white = white;
         this.x = x;
